@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: kaiti;
+    src: url("../font/YeZiGongChangJiaoKeShuPinYinTi/YeZiGongChangJiaoKeShuPinYinTi-2.ttf");
+}
+
+@font-face {
+    font-family: hefeng;
+    src: url("../font/HeFengShuDaoZhaoHeFeiLongTi/HeFengShuDaoZhaoHeFeiLongTi/HeFengShuDaoZhaoHeFeiLongTi-Shan(GEETYPE-FeilongGBT-Flash)-2.ttf");
+}
+
+.schoolbody {
+    width: 80%;
+    /*height: 1000px;*/
+    background-color: #e7d8f1;
+    margin: 10px auto;
+    border: 0 solid red;
+}
+
+.schoolbody #datatotal {
+    margin: 0 auto;
+    width: 100%;
+    /*border: 1px solid #c79a06;*/
+    /*border-radius: 20px;*/
+    background-color: #dcbd86;
+}
+
+#datatotal p:first-child {
+    display: inline-block;
+    width: 49%;
+    height: 50px;
+    line-height: 50px;
+    /*background-color: #fff;*/
+    /*重要属性 当display 行内块不对齐的时候使用*/
+    vertical-align: top;
+    font-size: 40px;
+    margin: 10px auto;
+    font-family: kaiti, fantasy;
+    text-align: center;
+    background: url("../image/时间周期.png") no-repeat;
+    background-position: 10px;
+    color: #085791;
+    background-size: contain;
+    text-shadow: 1px 1px rgba(4, 181, 213, 0.59);
+    overflow: hidden;
+}
+
+.schoolbody #data {
+    width: 50%;
+    height: 50px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 50px;
+    color: #0f81e3;
+    font-size: 30px;
+    display: inline-block;
+    overflow: hidden;
+    font-family: miaomiao, fantasy;
+}
+
+.knowledge > p:first-child {
+    line-height: 40px;
+    /*background-color: #fff;*/
+    padding-left: 1%;
+    font-family: 楷体, serif;
+    font-size: 25px;
+}
+
+.knowledge p:first-child img {
+    width: 40px;
+    height: 40px;
+}
+
+.knowledge .urls {
+    width: 70%;
+    /*margin: 0 auto;*/
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 30px;
+    /*border: 1px solid red;*/
+    background: url("../image/sickle-gc74a028be_640.png") no-repeat;
+    background-size: contain;
+    backdrop-filter: blur(100px);
+    vertical-align: top;
+    display: inline-block;
+}
+
+.knowledge .urls p {
+    text-indent: 2em;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.knowledge .huaimg {
+    width: 29%;
+    display: inline-block;
+    position: sticky;
+    top: 10px;
+
+
+}
+
+.knowledge .huaimg h2 {
+    font-family: hefeng, fantasy;
+    text-align: center;
+    color: #ef2d0c;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.knowledge .huaimg p {
+    margin-top: 10px;
+    width: 100%;
+    /*background-color: #fff;*/
+    text-align: center;
+}
+
+.knowledge .huaimg p img {
+    width: 62%;
+    border-radius: 10px;
+}

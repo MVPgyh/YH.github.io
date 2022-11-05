@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小航の前端小窝-登录</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/bottom.css">
+    <link rel="icon" href="image/微笑哆啦A梦(smile%20Doraemon)-ico_爱给网_aigei_com.ico" type="images/x-ico" />
+</head>
+<body>
+
+<div class="navtop">
+    <div class="mylogo"></div>
+    <p>小郭の前端小窝</p>
+    <div class="sousuo">
+        <input type="text" placeholder="        Click here to search">
+        <img src="image/搜索类目.png">
+    </div>
+    <ul class="daohangbiaoqian">
+        <li><a href="color.html">色彩</a></li>
+        <li><a href="poem.html">诗画</a></li>
+        <li><a href="people.html">人文</a></li>
+        <li><a href="school.html">感官</a></li>
+        <li><a href="login.html">登录</a></li>
+    </ul>
+</div>
+<div id="video">
+    <p class="welcome">Welcome To <br><i>小郭の前端小窝</i></p>
+    <video autoplay="autoplay" loop="loop" muted="muted">
+        <source src="image/synth%20city%20by%20VISUALDON%204K%2060%20FPS.mp4" type="video/mp4">
+    </video>
+</div>
+<div id="denglu">
+    <div class="login">
+        <img src="image/锁,密码,开锁,解锁.png" alt="登录">
+        <h1>Login</h1>
+    </div>
+    <div class="chacha">
+        <img src="image/叉叉.png" alt="退出登录页面">
+    </div>
+    <form action="#">
+        <div>
+            <p class="ZH"></p>
+            <input type="text" name="username" id="username" placeholder="    请输入账号">
+        </div>
+        <div>
+            <p class="MM"></p>
+            <input type="password" name="password" id="password" placeholder="    请输入密码">
+            <label><img src="image/眼睛-睁眼.png" alt="" id="eyes"></label>
+        </div>
+        <div class="denglu">
+            <input type="submit" value="登&nbsp;录">
+        </div>
+    </form>
+</div>
+<div class="denglubgimg" >
+    <img src="image/月亮.png" alt="yueliang">
+    <p id="wenben">
+        Today Is Gold !
+    </p>
+</div>
+<div class="bottominfo">
+    <div>
+        <img src="image/地址.png" alt="dizhi">
+        地址:河北省沧州市黄河西路49号
+        邮编:&nbsp; 061001 <br>
+    </div>
+    <p>
+        <img src="image/版权.png" alt="banquan">
+        版权所有:&copy;计算机系软件工程2102郭玉行<br>
+        <img src="image/qq.png" alt="qq">
+        QQ:&nbsp;2649456896 <br>
+        <img src="image/邮箱.png" alt="emile">
+        E-mile:&nbsp;gyh020815@outlook.com <br>
+        <img src="image/call.png" alt="dianhua">
+        电话:&nbsp;17803107734
+    </p>
+    <p class="myinfo">
+        <img src="image/支付宝.png" alt="1">
+        <img src="image/微信.png" alt="2">
+        <img src="image/微信图片_20221029205036.jpg" alt="3">
+        <br>
+        <img src="image/爱心.png" alt="4" style="width: 32px;height: 32px">
+        友情赞助一下
+    </p>
+</div>
+
+<script>
+
+    var username = document.querySelector("#username");
+    username.addEventListener("focus", function () {
+        username.setAttribute("placeholder", " ")
+    }, false)
+    username.addEventListener("blur", function () {
+        username.setAttribute("placeholder", "    请输入账号")
+    }, false)
+    var password = document.querySelector("#password");
+    password.addEventListener("focus", function () {
+        password.setAttribute("placeholder", " ")
+    }, false)
+    password.addEventListener("blur", function () {
+        password.setAttribute("placeholder", "    请输入密码")
+    }, false)
+
+    var denglu = document.querySelector("#denglu")
+    var input = document.querySelector('#password')
+    var imgs = document.getElementById('eyes');
+    //下面是一个判断每次点击的效果
+    var flag = 0;
+    imgs.onclick = function () {
+        if (flag == 0) {
+            input.type = 'text';
+            denglu.style.backgroundImage = "linear-gradient(to bottom right, #7e89d5, #eae0b0)";
+            //通过id操纵
+            eyes.src = 'image/眼睛-睁眼.png';//睁眼
+            flag = 1;
+        } else {
+            input.type = 'password';
+            eyes.src = 'image/关闭-眼睛.png';//闭眼
+            denglu.style.backgroundImage = "url(../image/preview.jpg)";
+            denglu.style.backgroundSize = "cover";
+            flag = 0;
+        }
+    }
+    flag1 = 0;
+    var  bodys=document.querySelector(".denglubgimg")
+    var heiye = document.querySelector(".denglubgimg img");
+    var pbiaoqian = document.querySelector("#wenben")
+    heiye.onclick = function () {
+        if (flag1 == 0) {
+            bodys.style.backgroundImage = "url(../image/bizhi.jpg";
+            pbiaoqian.style.visibility = "hidden";
+            flag1 = 1;
+        }else {
+            bodys.style.backgroundImage="linear-gradient(to top left, #da7acb, #eae0b0)"
+            pbiaoqian.style.visibility="visible"
+            flag1=0;
+        }
+
+    }
+
+</script>
+
+</body>
+</html>

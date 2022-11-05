@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body .datapoem {
+    width: 75%;
+    /*height: 2000px;*/
+    /*border: 1px solid red;*/
+    background-color: #e8dddd;
+    margin: 0 auto;
+    /*margin-top: 12px;*/
+    /*margin-bottom: 20px;*/
+}
+@font-face {
+    font-family: kaiti1;
+    src: url("../font/YeZiGongChangYouLongXingKai/YeZiGongChangYouLongXingKai-2.ttf");
+}
+
+.datapoem .china .gubiao {
+    height: 75px;
+    /*background-color: #fff;*/
+    text-align: center;
+    color: #ace323;
+    line-height: 75px;
+    /*padding-left: 40px;*/
+    font-size: 45px;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to top right, #a9aba4, #20b4c7);
+}
+
+.datapoem .china .gubiao img {
+    width: 8%;
+    position: absolute;
+    right: 350px;
+}
+
+.datapoem .china .gubiao span {
+    /*animation-name: biaoti;
+    animation-duration: 3s;*/
+    font-family: miaomiao, fantasy;
+    color: #f1ecec;
+}
+
+.china .ZGgudai {
+    width: 100%;
+    height: 667px;
+    background-image: url("../image/VCG211353694367.png");
+    background-repeat: no-repeat;
+    background-size: 105% 100%;
+    background-position: center;
+    /*border: 1px solid red;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.china .ZGgudai div:first-child {
+    width: 100%;
+}
+
+.china .ZGgudai div:first-child p:nth-child(1) {
+    background-image: url("../image/VCG211395789249.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    line-height: 300px;
+    writing-mode: vertical-lr;
+    font-size: 55px;
+    font-family: kaiti, sans-serif;
+    float: left;
+}
+
+.china .ZGgudai div:first-child p:nth-child(2) {
+    width: 600px;
+    height: 250px;
+    margin-top: 50px;
+    margin-right: 100px;
+    float: right;
+    /*border: 1px solid red;*/
+    /*text-align: center;*/
+    padding-top: 50px;
+    text-indent: 2em;
+    font-size: 27px;
+    font-family: 楷体, cursive;
+    z-index: 100;
+    position: relative;
+}
+
+.china .ZGgudai div:first-child img[alt="huaduo"] {
+    position: absolute;
+    width: 260px;
+    left: 76%;
+}
+
+.china .ZGgudai div:nth-child(2) {
+    width: 100%;
+}
+
+.china .ZGgudai div:nth-child(2) p:nth-child(1) {
+    background-image: url("../image/VCG211389809374.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 350px;
+    margin-right: 50px;
+    margin-top: -70px;
+    text-align: center;
+    line-height: 350px;
+    writing-mode: vertical-lr;
+    font-size: 55px;
+    font-family: kaiti, sans-serif;
+    float: right;
+}
+
+.china .ZGgudai div:nth-child(2) p:nth-child(2) {
+    width: 600px;
+    height: 250px;
+    margin-top: -50px;
+    margin-left: 100px;
+    float: left;
+    padding-top: 50px;
+    text-indent: 2em;
+    font-size: 27px;
+    font-family: 楷体, cursive;
+    z-index: 100;
+    position: relative;
+    overflow: auto;
+}
+
+.china .imageinfo {
+    position: relative;
+    overflow: hidden;
+    /*text-align: center;*/
+}
+
+.china .imageinfo  .one1 {
+    width: 100%;
+    height: 300px;
+    background-image: url("../image/VCG211406372759.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.china .imageinfo img[alt="meihua"] {
+    width: 20%;
+    position: absolute;
+    top: -30px;
+}
+
+.china .imageinfo img[alt="pingzhang"] {
+    width: 30%;
+    height: 100%;
+    /*position: absolute;*/
+    float: right;
+    margin-right: -20px;
+}
+@keyframes yundong {
+    0%{
+        background-color: rgba(36, 165, 220, 0.6);
+        margin-left: -500px;
+        opacity: 0;
+    }
+    to {
+        background-color: #16e5d4;
+        /*color: #ee211a;*/
+        opacity: 1;
+    }
+}
+@keyframes yundong1 {
+    from {
+        opacity: 0;
+        background-color: #53d925;
+        margin-left: 300px;
+    }
+    to {
+        background-color: rgba(48, 151, 215, 0.32);
+        /*color: #ee211a;*/
+        opacity: 1;
+    }
+}
+.china .imageinfo .dongtaitu {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    background-image: url("../image/VCG211368284870.png");
+    background-position: center;
+    background-size: 120% 120%;
+    margin-left:23%;
+    position: relative;
+    border: 1px solid transparent;
+}
+.china .imageinfo .dongtaitu div{
+    width: 70%;
+    height: 45px;
+    /*background-color: #4316e5;*/
+    border-radius: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-family: 楷体, fantasy;
+    font-size: 28px;
+    color: #f5f509;
+    box-shadow: 2px 2px 2px gray;
+    position: relative;
+}
+.china .imageinfo .dongtaitu img[alt="yinzhang"]{
+    position: absolute;
+    width: 45px;
+    top: 120px;
+    left: 80px;
+}
+.china .imageinfo .dongtaitu div:nth-child(2){
+    animation-name: yundong;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+    margin-top: 50px;
+    margin-left: 25px;
+    color: #faf6f6;
+    font-family: kaiti1, fantasy;
+    font-size: 32px;
+}
+.china .imageinfo .dongtaitu div:nth-child(3){
+    animation-name: yundong1;
+    animation-iteration-count:infinite;
+    animation-duration: 4s;
+    margin-left: 27%;
+    /*overflow: hidden;*/
+    margin-top: 30px;
+}
+.china .imageinfo .dongtaitu div:nth-child(4){
+    animation-name: yundong;
+    animation-iteration-count:infinite;
+    animation-duration: 4s;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.china .poem1{
+    width: 50%;
+    /*background-color: #cb9520;*/
+    /*padding-left: 120px;*/
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    font-family: 楷体, cursive;
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.china .poem2{
+    width: 50%;
+    /*background-color: #cb9520;*/
+    box-sizing: border-box;
+    float: right;
+    text-align: center;
+}
+.china .poem2 img[alt="chunjiang"]{
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 10px;
+}
+.china .poem2 img[alt="60243"]{
+    width: 100%;
+    border-radius: 15px;
+}
+.datapoem .huojian{
+    position: relative;
+}
+
+@keyframes diaoyu {
+    from{
+        margin-left: 0;
+    }
+    50%{
+        margin-left: 80%;
+    }
+    to{
+        margin-left: 0;
+    }
+}
+.datapoem .laoren {
+    position: relative;
+}
+.datapoem .laoren img[alt="diaoyu"]{
+    width: 300px;
+    margin-top: -100px;
+    animation-name: diaoyu;
+    animation-duration: 5s;
+    /*匀速*/
+    animation-timing-function: linear;
+    /*循环播放*/
+    animation-iteration-count: infinite;
+}
+.datapoem .laoren img[alt="huojian"]
+{
+    position: fixed;
+    bottom: 300px;
+    right: 40px;
+    cursor: pointer;
+}
+
+

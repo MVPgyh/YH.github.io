@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 微软雅黑 serif;
+}
+
+body {
+    background-color: #f3f0e8;
+    position: relative;
+}
+
+#video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+#video video {
+    width: 100%;
+    /*height: 100%;*/
+    object-fit: cover; /*填充满*/
+    opacity: 0.9;
+}
+
+#video .welcome {
+    position: absolute;
+    top: 260px;
+    margin-left: calc(50% - 475px);
+    width: 950px;
+    height: 250px;
+    /*background-color: #f8f8f8;*/
+    color: #fddaa3;
+    font-size: 80px;
+    font-weight: bold;
+    z-index: 888;
+    /*line-height: 150px;*/
+    text-align: center;
+    border: 13px double #ba1b9c;
+    border-radius: 30px;
+    box-shadow: 4px 4px #901a7d;
+    opacity: 0.9;
+    text-shadow: 3px 3px 1px #c98080;
+
+    /*background-image: linear-gradient(to right, #d08a14, #c71bc7);
+    -webkit-background-clip: text;
+    color: transparent;*/
+}
+
+.login {
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: #c978d9;
+}
+
+.login img, h1 {
+    display: inline-block;
+}
+
+.login img {
+    width: 50px;
+    height: 50px;
+}
+
+.chacha {
+    position: absolute;
+    top: 3px;
+    right: 8px;
+}
+
+.chacha img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.chacha img:hover {
+    opacity: 0.5;
+}
+
+
+#denglu {
+    width: 600px;
+    height: 400px;
+    /*background-color: #9f2214;*/
+    position: absolute;
+    display: flex;
+    /*margin-top: 200px;*/
+    margin-left: calc(50% - 300px); /*计算值*/
+    border: 0 white solid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    top: 1100px;
+    /*暮山紫 米汤娇*/
+    background-image: linear-gradient(to bottom right, #7e89d5, #eae0b0);
+    z-index: 100;
+}
+
+#denglu div:nth-child(2) {
+    display: block;
+    margin-top: 5px;
+}
+
+#username, #password {
+    display: inline-block;
+    width: 260px;
+    height: 30px;
+    background-color: #F5F2E9;
+    border: 1px #F5F2E9 solid;
+    border-radius: 5px;
+    outline: none; /* 取消点击时的黑色边框*/
+    padding-left: 20px;
+}
+
+/*去除小眼睛*/
+#password::-ms-reveal {
+    display: none;
+}
+
+#password::-webkit-input-placeholder,
+#username::-webkit-input-placeholder {
+    color: #baa0c5;
+    font-size: 16px;
+}
+
+form div {
+    position: relative;
+}
+
+form div:nth-child(1) p:nth-child(1) {
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 1px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../image/username.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    position: relative;
+    top: 10px;
+}
+
+form div:nth-child(2) p:nth-child(1) {
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 1px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../image/password.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 10px;
+}
+
+form div:nth-child(2) label #eyes {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 13px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.denglu {
+    width: 312px;
+    height: 42px;
+    margin-top: 20px;
+    /*border: 1px solid red;*/
+    position: relative;
+    left: 16px;
+}
+
+.denglu input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 23px;
+    background-color: #f3f0e8;
+    font-size: 25px;
+    color: #A4ABD6;
+}
+
+.denglu input:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.denglubgimg {
+    background-image: linear-gradient(to top left, #da7acb, #eae0b0);
+    position: relative;
+    background-size: cover;
+    height: 750px;
+}
+
+.denglubgimg img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 10px;
+    left: 50px;
+    cursor: pointer;
+}
+
+.denglubgimg p {
+    /*border: 1px red solid;*/
+    width: 135px;
+    height: 500px;
+    position: absolute;
+    writing-mode: vertical-lr;
+    top: 100px;
+    left: 50px;
+    font-size: 70px;
+    word-spacing: 5px;
+    font-weight: bold;
+    font-family: "Sitka Display", serif;
+    background-image: linear-gradient(to right, #e39b23, #d51ed5);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.denglubgimg img:hover {
+    opacity: 0.5;
+}
+
+
+

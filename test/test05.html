@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .card-filp {
+            height: 200px;
+            width: 200px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 1s;
+            border: 1px solid red;
+        }
+        .front,
+        .back {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            backface-visibility:hidden;
+            text-align: center;
+            line-height: 200px;
+        }
+        .front {
+            background: lightgreen;
+        }
+        .back {
+            background: lightblue;
+        }
+        .back {
+            transform: rotatey(180deg);
+        }
+        .card-filp:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+<div class="card-filp">
+    <div class="back">qianmian</div>
+    <div class="front">houmian</div>
+</div>
+</body>
+</html>

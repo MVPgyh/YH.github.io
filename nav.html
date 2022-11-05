@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      text-decoration: none;
+      font-family: 微软雅黑, serif;
+    }
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100px;
+      list-style-type: none;
+      background-color: #f6f4f4;
+      background-image: linear-gradient(to bottom right, #d3d4e0, #c8c3d9);
+    }
+
+    li a {
+      display: block;
+      color: #050317;
+      text-decoration: none;
+      /*border-radius: 20px;*/
+    }
+
+    li {
+      line-height: 35px;
+      background-color: #cae5d6;
+      width: 80px;
+      height: 35px;
+      border-radius: 20px;
+      text-align: center;
+      margin-right: 20px;
+    }
+
+    li:hover{
+      background-color: #8a8aea;
+    }
+    ul li:first-child {
+      margin-left: 400px;
+    }
+    .img{
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-image: url("image/touxiang.jpg");
+      background-size: cover;
+      margin-right: 150px;
+    }
+    ul>a{
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <ul>
+    <li><a href="#">颜色</a></li>
+    <li><a href="#">文章</a></li>
+    <li><a href="#">新闻</a></li>
+    <li><a href="#">事件</a></li>
+    <li><a href="#">大事</a></li>
+    <a href="#">
+      <div class="img"></div>
+    </a>
+  </ul>
+</div>
+<script>
+
+</script>
+</body>
+</html>
