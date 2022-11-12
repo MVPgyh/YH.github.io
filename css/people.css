@@ -70,6 +70,7 @@
 }
 .jianjie{
     width: 80%;
+    min-width: 1215px;
     margin: 20px auto 0;
     font-family: kaiti, fantasy;
     color: #8a8aea;
