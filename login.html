@@ -110,13 +110,13 @@
     var flag = 0;
     imgs.onclick = function () {
         if (flag == 0) {
-            input.type = 'text';
+            input.type = 'password';
             denglu.style.backgroundImage = "linear-gradient(to bottom right, #7e89d5, #eae0b0)";
             //通过id操纵
             eyes.src = 'image/眼睛-睁眼.png';//睁眼
             flag = 1;
         } else {
-            input.type = 'password';
+            input.type = 'text';
             eyes.src = 'image/关闭-眼睛.png';//闭眼
             denglu.style.backgroundImage = "url(../image/preview.jpg)";
             denglu.style.backgroundSize = "cover";

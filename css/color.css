@@ -1,5 +1,6 @@
 .colorbody {
     width: 75%;
+    min-width: 1135px;
     /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!重点bug 真吗的!!!!*/
     /*height: 2000px;*/
     background-color: #fdfdfe;
@@ -494,19 +495,28 @@ h2 .biankuang1 {
     color: white;
 }
 
+
 .zhuzi img {
     position: absolute;
     bottom: 7%;
     width: 16%;
 }
 
+.zhuzi img:nth-child(1){
+    min-width: 243px;
+    min-height: 522px;
+}
 .zhuzi img:nth-child(2) {
     left: -90px;
+    min-width: 243px;
+    min-height: 522px;
 }
 
 .zhuzi img[alt="xiongmao"] {
     left: 60px;
     z-index: 999;
+    min-width: 243px;
+    min-height: 250px;
 }
 
 .zhuzi img[alt="shuiyuan"] {
@@ -529,6 +539,8 @@ h2 .biankuang1 {
     width: 20%;
     left: 80%;
     z-index: 1000;
+    min-width: 300px;
+    min-height: 230px;
 }
 
 

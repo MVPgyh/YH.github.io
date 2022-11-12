@@ -1,5 +1,6 @@
 .bottominfo {
     /*width: 100%;*/
+    min-width: 1500px;
     height: 220px;
     background-color: #006599;
     border: 1px solid transparent;

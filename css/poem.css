@@ -5,6 +5,7 @@ body {
 
 body .datapoem {
     width: 75%;
+    min-width: 1120px;
     /*height: 2000px;*/
     /*border: 1px solid red;*/
     background-color: #e8dddd;

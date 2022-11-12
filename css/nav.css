@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: miaomiao;
-    src: url("/font/优设标题黑_猫啃网.ttf");
+    src: url("../font/优设标题黑_猫啃网.ttf");
 }
 
 .mylogo {
@@ -67,6 +67,7 @@
 }
 
 .navtop {
+    min-width: 1500px;
     border-top: 1px solid #f8f8fa;
     width: 100%;
     height: 80px;
